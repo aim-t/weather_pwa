@@ -3,13 +3,13 @@
     "name": "Weather_PWA",
     "icons": [
       {
-        "src": "./logo.png",
+        "src": "/logo.png",
         "type": "image/png",
         "sizes": "1024x1024",
         "purpose": "any maskable"
       }
     ],
-    "start_url": "./index.html",
+    "start_url": ".",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
