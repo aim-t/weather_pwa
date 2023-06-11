@@ -11,9 +11,6 @@ function App() {
     if (e.key === "Enter") {
       try {
         const data = await fetchWeather(query);
-        if (data.cod === "404") {
-          throw new Error("City not found. Please try again."); // Throw an error for 404 response
-        }
         setWeather(data);
         setError(null); // Clear the error message if present
         setQuery("");

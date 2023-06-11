@@ -6,10 +6,11 @@
         "src": "/logo.png",
         "type": "image/png",
         "sizes": "1024x1024",
-        "purpose": "any maskable"
+        "purpose": "maskable"
       }
     ],
-    "start_url": ".",
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
     "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
