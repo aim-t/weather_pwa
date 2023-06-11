@@ -1,6 +1,6 @@
 # weather_pwa
 
-We'll use Servers workers and webapp manifest.
+We'll use Servers workers and webapp manifest to create this pwa.
 
 ## Description
 A simple weather app with search bar to type in the city we want to get the weather for using React 
