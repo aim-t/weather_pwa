@@ -2,8 +2,7 @@
 
 ### [Live Site](https://accessweather.netlify.app/) 
 
-
-![Weather App](./public/preview.png)
+<img width="942" alt="preview" src="https://github.com/aiman2022skipq/weather_pwa/assets/111865753/f5f5120e-f6d1-40b1-912c-9c03e9d3cb12" alt="website preview">
 
 This is a simple Weather Progressive Web App built with React. It allows users to search for the weather of any city. The app utilizes the OpenWeatherMap API to fetch real-time weather data and displays it in a user-friendly manner. This application can be used on the web or downloaded natively on your devices. 
 
@@ -51,8 +50,7 @@ You can install the Weather Progressive Web App on your devices by following the
 2. In the address bar of your browser, you will see a small install icon (usually located to the right of the address bar).
 3. Click on the install icon to initiate the installation process.
 4. Follow the prompts and confirm the installation.
-5. The Weather App will now be installed on your computer and accessible from your applicatio<img width="942" alt="preview" src="https://github.com/aiman2022skipq/weather_pwa/assets/111865753/7011f83d-69b4-4b62-8e3e-09522378f463">
-ns or desktop.
+5. The Weather App will now be installed on your computer and accessible from your applications or desktop.
 
 ### For Mobile Phones:
 1. Open the app in your mobile browser by visiting the Weather App.
@@ -64,7 +62,9 @@ ns or desktop.
 
 ## Passes Google Lighthouse Audits
 
-This Weather Progressive Web App has been tested and passes all Google Lighthouse audits, ensuring a high level of performance, accessibility, best practices, and SEO optimization.
+This Weather Progressive Web App has been tested and passes all Google Lighthouse audits, ensuring a high level of performance, accessibility, best practices, and SEO optimization. <br/>
+<img src="https://github.com/aiman2022skipq/weather_pwa/assets/111865753/dc27a5d8-c2f8-45f6-a9e9-8422a950159c" style="width: 50%;" alt="Lighthouse report">
+
 
 ### Credits
 [SVG Backgrounds](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
