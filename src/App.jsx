@@ -5,15 +5,24 @@ import "./App.css";
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
+  const [error, setError] = useState(null); // State variable for error message
 
-  const search = async (e) =>{
-    if(e.key === "Enter"){
-      const data = await fetchWeather(query);
-
-      setWeather(data);
-      setQuery("");
+  const search = async (e) => {
+    if (e.key === "Enter") {
+      try {
+        const data = await fetchWeather(query);
+        if (data.cod === "404") {
+          throw new Error("City not found. Please try again."); // Throw an error for 404 response
+        }
+        setWeather(data);
+        setError(null); // Clear the error message if present
+        setQuery("");
+      } catch (error) {
+        setError("City not found. Please try a valid city name."); // Set the error message for any other error
+        setQuery("");
+      }
     }
-  }
+  };
 
   return (
     <>
@@ -27,12 +36,12 @@ function App() {
           onKeyDown={search}
         />
 
-        {weather.main && (       
+        {Object.keys(weather).length > 0 && !error ? ( // Check if weather data is present and no error
           <div className="city">
             <h2 className="city-name">
-              <span>{weather.name}</span>  
+              <span>{weather.name}</span>
               <sup>{weather.sys.country}</sup>
-            </h2>  
+            </h2>
 
             <div className="city-temp">
               {Math.round(weather.main.temp)}
@@ -40,14 +49,17 @@ function App() {
             </div>
 
             <div className="info">
-              <img className="city-icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description} />
+              <img
+                className="city-icon"
+                src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+                alt={weather.weather[0].description}
+              />
               <p>{weather.weather[0].description}</p>
             </div>
           </div>
-        )} 
-
-
-
+        ) : (
+          <div className="error">{error}</div> // Display the error message if present
+        )}
       </div>
     </>
   );
