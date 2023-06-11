@@ -15,7 +15,7 @@ This is a simple Weather Progressive Web App built with React. It allows users t
 
 ## Dependencies
 
-- axios: ^0.21.1
+- Axios
 
 ## Features
 
